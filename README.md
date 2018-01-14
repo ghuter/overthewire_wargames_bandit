@@ -1,1 +1,1 @@
-# overthewire_wargames_bandit
+http://overthewire.org/wargames/bandit/
