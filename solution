@@ -1,0 +1,115 @@
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+pass: bandit0
+
+cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+ssh bandit1@localhost
+
+cat ./-
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+cat spaces in this filename
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+cat inhere/.hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+(bandit 4 to bandit 5)
+cd inhere; file ./*
+cat ./-file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+cd inhere; find -readable -size 1033c
+cat ./maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+(bandit 6 to 7)
+find / -user bandit7 -group bandit6 -size 33c 2> /dev/null
+cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+cat data.txt | grep millionth
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+(bandit 8 to 9)
+cat data.txt | sort | uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+cat data.txt | strings | grep ==
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+(bandit 10 to 11)
+base64 -d data.txt
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+cat data.txt | tr N-ZA-Mn-za-m A-Za-z
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+(bandit 12 to 13)
+mkdir /tmp/bandit12123
+cd !$; cp ~/data.txt ./
+cp data.txt data.hex; xxd -r data.hex > data.bin
+cp data.bin data.gz; gunzip data.gz
+mv data data.bz2; bzip2 -d data.bz2
+tar xvf data
+tar xvf data5.bin
+tar xvf data6.bin
+mv data8.bin data8.bin.gz; gunzip data8.bin.gz
+cat data8.bin
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+ssh -i sshkey.private bandit14@localhost
+cat /etc/bandit_pass/bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+(bandit 14 to 15)
+nc localhost 30000 # submit pass of the current level
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+openssl s_client -host localhost -port 30001 -ign_eof
+# submit the pass of the current level
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+(bandit 16 to 17)
+nmap localhost -p 31000-32000
+openssl s_client -host localhost -port 31790 -ign_eof
+# you have to copy the given rsa private key
+mkdir /tmp/bandit16_to_17; cd !$
+nano sshkey.private
+# paste
+chmod 600 sshkey.private; ssh -i sshkey.private bandit17@localhost
+
+diff passwords.old passwords.new
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+ssh -t bandit18@localhost /bin/sh
+
+(bandit 18 to 19)
+cat readme
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+./bandit20-do cat /etc/bandit_pass/bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+(bandit 20 to 21)
+# terminal 1:
+nc -lvp 4568
+#terminal 2:
+./suconnect 4568
+# terminal 1: give the pass of the level 20
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+cat /etc/cron.d/cronjob_bandit22
+/usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+(bandit 22 to 23)
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+echo I am user bandit22 | md5sum | cut -d ' ' -f 1
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+
