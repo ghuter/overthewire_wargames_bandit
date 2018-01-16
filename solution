@@ -124,3 +124,6 @@ cat pass
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
 (bandit 24 to 25)
+mkdir /tmp/my_crunch; chmod 777 !$; cd !$
+vim script.sh
+chmod +x !$; chmod 777 !$
