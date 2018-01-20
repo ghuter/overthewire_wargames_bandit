@@ -155,3 +155,4 @@ vim script.sh; chmod +x !$; chmod 777 !$
     echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i" | nc localhost 30002;
   done
 ./script.sh
+sort data | uniq -u
