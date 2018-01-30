@@ -158,4 +158,10 @@ vim script.sh; chmod +x !$; chmod 777 !$
 sort data | uniq -u
 uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
-
+cat /etc/passwd | grep bandit26
+cat /usr/bin/showtext
+ssh -i bandit26.sshkey bandit26@localhost
+reduce terminal to force it using "more" to draw msg "Bandit26"
+v
+:e /etc/bandit_pass/bandit26
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
